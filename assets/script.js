@@ -38,32 +38,31 @@ var hour = document.querySelector("data-time");
 var time = moment(hour, "LT");
 
 
-/*
+
 // Can click into the box ot enter a task/item
+
+/*
 var hourlyEvent = document.querySelectorAll(".w-75");
 for (var i=0; i<hourlyEvent.length; i++) {
     hourlyEvent[i].addEventListener("click", function() {
       
     })
 }
+*/
+var tasks = {};
 
-object.addEventListener("click", myScript);
+object.addEventListener("click", "#text-input");
 var textInput = $("<textarea")
     .addClass("form-control")
     .val(text);
+var taskLi = $("<li>").addClass("list-group-item");
+var taskSpan = $("<span>")
+    .addClass("badge badge-primary badge-pill")
+    .text(taskDate);
+var taskP = $("<p>")
+    .addClass("m-1")
+    .text(taskText);
 
-    */
+    
 
-    var tasks = {};
-
-    var createTask = function(taskText, taskDate, taskList) {
-      // create elements that make up a task item
-      var taskLi = $("<li>").addClass("list-group-item");
-      var taskSpan = $("<span>")
-        .addClass("badge badge-primary badge-pill")
-        .text(taskDate);
-      var taskP = $("<p>")
-        .addClass("m-1")
-        .text(taskText);
-
-        
+  
